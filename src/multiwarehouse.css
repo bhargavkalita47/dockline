@@ -1,0 +1,45 @@
+/* Dockline industrial system extension: organisation, shelf layout, and transfers */
+.sidebar-navigation{overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:#4c555b transparent}
+.warehouse-switcher{display:flex;align-items:center;gap:10px;border:1px solid #d2d7db;border-radius:8px;padding:8px 11px;background:#fff;color:#222a2c;max-width:320px;font-size:12px;font-weight:700}
+.warehouse-switcher svg{color:#f02035;flex-shrink:0}
+.warehouse-switcher select{font-size:12px;max-width:260px;min-width:120px;text-overflow:ellipsis;border:0;background:transparent;color:inherit;outline:none;cursor:pointer;font-weight:700}
+.network-page,.transfers-page{max-width:1440px;margin:auto}
+.network-intro{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0 22px}
+.network-intro>div{background:#fff;border:1px solid #e0e3e5;border-top:3px solid #ffcc00;min-height:118px;padding:20px 22px;display:flex;flex-direction:column;gap:4px}
+.network-intro span{font-size:11px;letter-spacing:.08em;font-weight:800;color:#667178}
+.network-intro strong{font-size:34px;font-weight:800;color:#14191c;letter-spacing:-.05em;line-height:1.2}
+.network-intro small{font-size:12px;color:#768087}
+.network-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(295px,1fr));gap:16px}
+.network-card{position:relative;background:#fff;padding:25px;border:1px solid #dfe3e5;border-radius:9px;display:flex;flex-direction:column;gap:15px;min-height:320px}
+.network-card-current{border-top:4px solid #e91d32}
+.network-card-top{display:flex;align-items:center;justify-content:space-between}
+.network-card-icon{display:grid;place-items:center;width:48px;height:48px;background:#161d21;color:#ffcb1b;border-radius:9px}
+.network-code{font-family:monospace;font-size:12px;font-weight:800;letter-spacing:.08em;background:#f1f3f4;padding:6px 10px;border-radius:5px;color:#41494d}
+.network-card h2{font-size:21px;line-height:1.25;letter-spacing:-.025em;margin:0;color:#182126}
+.network-card p{display:flex;gap:7px;align-items:center;font-size:13px;color:#68747b;margin:0}
+.network-card p svg{flex-shrink:0}
+.network-card-metrics{display:grid;grid-template-columns:repeat(3,1fr);background:#f6f7f7;padding:16px;border:1px solid #e8eaec;gap:10px}
+.network-card-metrics>div{display:flex;flex-direction:column;gap:3px}
+.network-card-metrics strong{font-size:21px;color:#1a2226}
+.network-card-metrics span{font-size:11px;color:#768087}
+.network-card-actions{display:flex;align-items:center;gap:8px;margin-top:auto}
+.network-remove-link{align-self:flex-start;color:#a0a7ab;font-size:11px;text-decoration:underline;text-underline-offset:3px;background:transparent;border:0;padding:5px 0;cursor:pointer}
+.network-delete{border:1px solid #f9b7b9;background:#fff3f3;padding:12px;display:flex;gap:7px;flex-wrap:wrap}
+.network-delete p{width:100%;color:#84252c;font-size:12px;line-height:1.5}
+.network-guidance{display:flex;align-items:flex-start;gap:16px;border-left:4px solid #ffd126;background:#fffbeb;padding:20px 24px;margin:24px 0;color:#2b3134}
+.network-guidance svg{flex-shrink:0;color:#b88706}.network-guidance strong{font-size:14px}.network-guidance p{margin:6px 0 0;font-size:13px;line-height:1.5;color:#596267}
+.shelf-manager-actions{display:flex;gap:7px;margin:0 24px 12px}.shelf-manager-actions .button{font-size:12px;padding:10px 13px}.shelf-delete-confirm{margin:0 24px 16px;border:1px solid #f3b5b5;background:#fff4f4;padding:15px;font-size:12px;color:#8f3333}.shelf-delete-confirm p{margin:0 0 10px}.shelf-delete-confirm>div{display:flex;gap:8px}
+.error-text{color:#b71d2f;font-size:12px;display:block;margin-top:10px}
+.transfer-process{border:1px solid #e0e3e5;background:#fff;padding:15px 20px;display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:18px;color:#626d74;font-size:12px;font-weight:700;flex-wrap:wrap}
+.transfer-process span{display:flex;gap:8px;align-items:center}.transfer-process span svg{color:#f02035}
+.transfer-ledger{border-radius:8px;overflow:hidden}.transfer-list{display:flex;flex-direction:column}.transfer-row{display:flex;gap:16px;padding:21px 23px;border-top:1px solid #e7eaec;align-items:center;background:#fff;min-width:0}.transfer-row:hover{background:#fcfcfc}.transfer-icon{background:#f2f4f5;border-radius:8px;display:grid;place-items:center;padding:12px;color:#242c30}.transfer-details{flex:1 1 220px;min-width:180px;display:flex;flex-direction:column;gap:6px}.transfer-details strong{font-size:14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.transfer-details>span{font-size:12px;color:#42494e}.transfer-details>small{font-size:11px;color:#859096}.transfer-status{border-radius:4px;padding:5px 7px;text-transform:uppercase;letter-spacing:.07em;font-size:9px;font-weight:900}.status-in_transit{background:#fff3bf;color:#7f5a00}.status-received{background:#dff5e8;color:#12683a}.status-cancelled{background:#edf0f1;color:#60696e}.transfer-route{display:flex;align-items:center;justify-content:center;gap:12px;flex:1 1 170px;color:#4c565b;font-size:12px;font-family:monospace;font-weight:700}.transfer-route svg{color:#e81f37;flex-shrink:0}.transfer-qty{display:flex;flex-direction:column;min-width:55px;align-items:center}.transfer-qty strong{font-size:22px}.transfer-qty small{color:#90979a;font-size:11px}.transfer-actions{display:flex;gap:8px;align-items:center}.transfer-actions .button{font-size:11px;min-height:36px}.transfer-inline-confirm{display:flex;gap:6px}.transfer-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.transfer-form-grid select{max-width:100%;width:100%;text-overflow:ellipsis}.transfer-row .button{white-space:nowrap}
+@media(max-width:1100px){.transfer-row{flex-wrap:wrap}.transfer-details{flex:1 1 calc(100% - 72px)}.transfer-route{justify-content:flex-start;padding-left:54px}.transfer-actions{margin-left:auto}.network-grid{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}}
+@media(max-width:680px){.warehouse-switcher{max-width:190px;padding:8px}.warehouse-switcher select{max-width:145px;min-width:80px}.network-intro{grid-template-columns:1fr;gap:8px}.network-intro>div{min-height:90px;padding:13px 16px}.network-intro strong{font-size:26px}.network-card{padding:18px}.network-card-actions{flex-wrap:wrap}.transfer-process{justify-content:flex-start;gap:10px}.transfer-row{padding:15px;gap:10px}.transfer-route{padding-left:0;flex:1 1 100%;font-size:11px}.transfer-form-grid{grid-template-columns:1fr}.transfer-actions{margin-left:0}.shelf-manager-actions{margin:0 14px 12px;flex-wrap:wrap}}
+.network-stock-compare{margin-top:25px;overflow:hidden;border:1px solid #e1e4e6;background:#fff}
+.network-compare-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px 24px;border-bottom:1px solid #e7eaed}
+.network-compare-heading h2{font-size:18px;margin:5px 0 3px;color:#182126}
+.network-compare-heading p{font-size:12px;color:#697379;margin:0}.network-compare-heading .search{max-width:280px}
+.network-sku{display:block;font-size:11px;margin-top:4px;font-family:monospace;color:#879096}
+.network-stock-compare .data-table tbody td{padding:14px 20px}
+@media(max-width:680px){.network-compare-heading{align-items:stretch;flex-direction:column}.network-compare-heading .search{max-width:100%}}
