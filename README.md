@@ -1,6 +1,16 @@
 # Dockline — Industrial Warehouse OS · Multi-warehouse Edition
 
-A standalone React + TypeScript warehouse management application for an FDE engineering portfolio. Dockline has an industrial SaaS visual system—graphite, steel, signal red, and safety yellow—designed around clear warehouse tasks rather than a complicated analytics dashboard.
+Dockline is a React and TypeScript warehouse operations demo. Follow stock from receiving to shipping, manage shelf capacity and reservations, and move stock between warehouses. The interactive demo persists data in the current browser.
+
+## Project timeline
+
+| Phase | What changed |
+| --- | --- |
+| Concept | Model warehouse work from supplier arrival through shipping, with physical shelf locations and a record of stock movements. |
+| October 2026 · Multi-warehouse edition | Expanded to separate warehouse inventories, a shared SKU catalogue, configurable shelves and a network-level stock view. |
+| Transfer workflow | Added dispatch, in-transit tracking, receipt and cancellation, with capacity checks and migration for earlier browser datasets. |
+
+**Engineering problems.** Reserved units must remain available to fulfil their orders, and in-transit units should appear at the destination only after receipt. The domain engine validates each command, applies the stock change as one transaction and records it in the movement ledger.
 
 ## Working workflows
 
