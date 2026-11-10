@@ -1,5 +1,7 @@
 # Dockline — Industrial Warehouse OS · Multi-warehouse Edition
 
+[Live demo on Cloudflare Workers](https://dockline.bhargavkalita1327.workers.dev/)
+
 Dockline is a React and TypeScript warehouse operations demo. Follow stock from receiving to shipping, manage shelf capacity and reservations, and move stock between warehouses. The interactive demo persists data in the current browser.
 
 ## Project timeline
