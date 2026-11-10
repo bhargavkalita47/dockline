@@ -1,8 +1,8 @@
 # Dockline — Industrial Warehouse OS · Multi-warehouse Edition
 
-[Live demo on Cloudflare Workers](https://dockline.bhargavkalita1327.workers.dev/)
+[Open Dockline](https://dockline.bhargavkalita1327.workers.dev/)
 
-Dockline is a React and TypeScript warehouse operations demo. Follow stock from receiving to shipping, manage shelf capacity and reservations, and move stock between warehouses. The interactive demo persists data in the current browser.
+Dockline is a warehouse operations app for receiving stock, organising shelves, fulfilling orders and transferring inventory between warehouses. Open the workspace, choose a warehouse and follow stock from arrival to shipment.
 
 ## Project timeline
 
@@ -12,7 +12,7 @@ Dockline is a React and TypeScript warehouse operations demo. Follow stock from 
 | October 2026 · Multi-warehouse edition | Expanded to separate warehouse inventories, a shared SKU catalogue, configurable shelves and a network-level stock view. |
 | Transfer workflow | Added dispatch, in-transit tracking, receipt and cancellation, with capacity checks and migration for earlier browser datasets. |
 
-**Today:** A browser-persisted operations demo covering receiving, shipping and inter-warehouse transfers.
+**Today:** The warehouse workspace covers receiving, shelf assignments, reservations, order fulfilment and inter-warehouse transfers.
 
 ## Engineering challenges and solutions
 
@@ -79,7 +79,7 @@ Cloudflare does not require paid hosting for this frontend. No server-side crede
 
 The local repository reads `dockline-warehouse-v2`, and if it is absent, automatically upgrades the old `dockline-warehouse-v1` state. Existing products, counts, receipts, orders, and movement history are assigned to the original warehouse, **WH-01**; the previously existing shelf codes are carried forward. Migration does **not** invent stock in a new warehouse or destroy the previous v1 localStorage key. New installations start with two populated sample warehouses and one sample transfer awaiting receipt.
 
-**Important:** browser-local data is not shared across different users, computers, or browsers. Deploying to Cloudflare gives you a real public frontend, but **not** a real-time multi-user warehouse database. Before using Dockline for operational inventory, connect a server/database with authenticated users, organisation membership, warehouse permissions, row-level scoping, transaction-safe stock mutations, and concurrency controls. The command/domain/repository boundaries are deliberately separated to support that next step.
+**Workspace storage.** Records are saved in the browser you use. Shared inventory across staff and devices requires a server and database with authenticated accounts, warehouse permissions and transaction-safe stock updates.
 
 ## Architecture
 
