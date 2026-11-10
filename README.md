@@ -10,7 +10,13 @@ Dockline is a React and TypeScript warehouse operations demo. Follow stock from 
 | October 2026 · Multi-warehouse edition | Expanded to separate warehouse inventories, a shared SKU catalogue, configurable shelves and a network-level stock view. |
 | Transfer workflow | Added dispatch, in-transit tracking, receipt and cancellation, with capacity checks and migration for earlier browser datasets. |
 
-**Engineering problems.** Reserved units must remain available to fulfil their orders, and in-transit units should appear at the destination only after receipt. The domain engine validates each command, applies the stock change as one transaction and records it in the movement ledger.
+**Today:** A browser-persisted operations demo covering receiving, shipping and inter-warehouse transfers.
+
+## Engineering challenges and solutions
+
+- **Warehouse isolation.** A shared SKU catalogue gives the network view a common vocabulary while stock, shelves, orders and reservations remain scoped to each warehouse.
+- **Stock in transit.** Dispatch checks unreserved stock and removes it from the source. Receipt checks shelf capacity and adds the stock exactly once. Cancelling an in-transit transfer returns it to the source.
+- **Older browser data.** The multi-warehouse version migrates earlier saved state so existing activity remains usable.
 
 ## Working workflows
 
