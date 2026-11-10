@@ -1,8 +1,20 @@
-# Dockline — Industrial Warehouse OS · Multi-warehouse Edition
+# Dockline — Multi-Warehouse Operations
 
 [Open Dockline](https://dockline.bhargavkalita1327.workers.dev/)
 
-Dockline is a warehouse operations app for receiving stock, organising shelves, fulfilling orders and transferring inventory between warehouses. Open the workspace, choose a warehouse and follow stock from arrival to shipment.
+Dockline is an inventory and fulfilment workspace for managing stock across multiple warehouses. It connects receiving, shelf placement, reservations, picking, packing, shipping and inter-warehouse transfers, with a shared SKU catalogue and warehouse-specific stock records.
+
+## Product capabilities
+
+- Multi-warehouse inventory, configurable storage shelves and network-wide stock visibility.
+- Supplier receiving, putaway, stock adjustments and stock movement history.
+- Order reservations, pick/pack/ship workflows and availability checks.
+- Dispatch, receive and cancel warehouse transfers with capacity and reservation checks.
+- Warehouse-scoped operational views, migration of saved workspaces and validated stock transitions.
+
+**Stack:** React · TypeScript · Vite · Cloudflare Workers · domain engine and typed services
+
+**Deployment scope:** The hosted application persists operational records within the current browser. The service architecture is structured for backend integration; multi-user database transactions and shared warehouse accounts are not part of the current hosted implementation.
 
 ## Project timeline
 
